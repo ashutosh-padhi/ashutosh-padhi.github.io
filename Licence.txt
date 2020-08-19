@@ -1,0 +1,2 @@
+All code which meant to be run in a computer is licensed under MIT Licence.
+All text which meant to be read by humans is licenced under CC BY-SA 4.0.

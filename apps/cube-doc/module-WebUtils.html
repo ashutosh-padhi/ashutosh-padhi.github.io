@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Module: WebUtils</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Module: WebUtils</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="module-WebUtils-CubeView.html">CubeView</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="~colorMap"><span class="type-signature">(inner) </span>colorMap<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>It is used to convert the tile color into css color string. These strings are
+valid css colors. Tile colors are basically tile face names, so it is a
+mapping of face to color. <code>l : 'green'</code> implies, left face will be green.</p>
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line105">line 105</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~WebUtils"><span class="type-signature">(inner) </span>WebUtils<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>The cube is made of <code>6 x size x size</code> number of tiles. Just that and not any
+specific container for each face. In this way it is easier to rotate any
+group of such tiles around any axis needed. Each tile is made of 3 cascaded
+elements.</p>
+<ol>
+<li>Face</li>
+<li>Tile</li>
+<li>Tile-in</li>
+</ol>
+<p><code>face</code> is the outer most element. all the tiles prefixed with same prefix
+belongs to a single face. e.g. all tiles prefixed with f will belongs to the
+front face.</p>
+<p><code>tile</code> is the middle element. it is raised a bit along z axis to give the
+tiles a 3d texture. It can any kind of fancy if needed.</p>
+<p><code>tile-in</code> is the inner most element. It will have color or image. on rotation
+of face, this is the tile which will be rotated.</p>
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line23">line 23</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".appendTemplate"><span class="type-signature">(static) </span>appendTemplate<span class="signature">(template, destinationNode)</span><span class="type-signature"> &rarr; {HTMLElement}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>It appends the given html string to a given node</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>template</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Html string</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>destinationNode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Dom node on which the html
+string will be appended</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line81">line 81</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".enableMouseDrag"><span class="type-signature">(static) </span>enableMouseDrag<span class="signature">(cubeView, initial_x_rotation, initial_y_rotation)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Cube can be rotated with mouse drag.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>cubeView</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>View Object of cube</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>initial_x_rotation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Rotation around x axis in degree</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>initial_y_rotation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Rotation around y axis in degree</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~attachRotator"><span class="type-signature">(inner) </span>attachRotator<span class="signature">(ele)</span><span class="type-signature"> &rarr; {HTMLElement}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>It will simply add an html element called the rotator. which will be used to
+do the animation.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ele</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Element on which rotator will be attacked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line176">line 176</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~genCubeClass"><span class="type-signature">(inner) </span>genCubeClass<span class="signature">(f, x, y)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Generates css class based on the color and position of the tile</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>f</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Face of the cube, any of <code>f</code>,<code>b</code>,<code>l</code>,<code>r</code>,<code>t</code>,<code>d</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>X co-ordinate of the tile</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Y co-ordinate of the tile</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line122">line 122</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Css class, the class defination is defined in style sheet</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~genRotationStyle"><span class="type-signature">(inner) </span>genRotationStyle<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>It generates the css when applied to a elements it will rotate the element.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Angle of rotation in degree around x axis</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Angle of rotation in degree around y axis</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line96">line 96</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~genTileClass"><span class="type-signature">(inner) </span>genTileClass<span class="signature">(size, x, y, ix, iy)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Generates css class. The class prefixed with <code>t</code> is a class representing the
+initial postion of the tile. this class along with color, uniquely describe a
+tile.</p>
+<p>This is needed for faces with image. Each tile will have a frangment of the
+image. e.g. tile with 't-0-0<code>and white face, is going to have the</code>(0,0)`th
+fragment of the image placed in position of white background.</p>
+<p>Other class like <code>left</code>, <code>right</code>, 'top-left` etc. defines the styling of each
+positioned tiles</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Size of the cube</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Current x coordinate of the tile</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Current y coordinate of the tile</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ix</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Initial x coordinate of the tile</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>iy</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Initial y coordinate of the tile</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="WebUtils.js.html">WebUtils.js</a>, <a href="WebUtils.js.html#line145">line 145</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Css class, the class defination is defined in style sheet</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Cube.html">Cube</a></li><li><a href="module-pubsub.html">pubsub</a></li><li><a href="module-util.html">util</a></li><li><a href="module-WebUtils.html">WebUtils</a></li></ul><h3>Classes</h3><ul><li><a href="module-Cube-Cube.html">Cube</a></li><li><a href="module-Cube-CubeEvents.html">CubeEvents</a></li><li><a href="module-Cube-CubeFace.html">CubeFace</a></li><li><a href="module-Cube-CubeTile.html">CubeTile</a></li><li><a href="module-Cube-Position.html">Position</a></li><li><a href="module-Cube-TileAccumulator.html">TileAccumulator</a></li><li><a href="module-WebUtils-CubeView.html">CubeView</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Tue Oct 11 2022 12:00:54 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

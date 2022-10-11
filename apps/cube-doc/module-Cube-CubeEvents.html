@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: CubeEvents</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: CubeEvents</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>
+            <span class="ancestors"><a href="module-Cube.html">Cube</a>~</span>CubeEvents<span class="signature">(axis, direction, position, affectedTiles, next)</span><span class="type-signature"></span></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    
+    <h4 class="name" id="CubeEvents"><span class="type-signature"></span>new CubeEvents<span class="signature">(axis, direction, position, affectedTiles, next)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>axis</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>One of <code>x</code>, <code>y</code> or <code>z</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p><code>1</code> for clockwise, <code>-1</code> for anti-clockwise</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>position</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Index of the current slice</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>affectedTiles</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="module-Cube-CubeTile.html">module:Cube~CubeTile</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>List of all affected tiles</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Handler to execute the rotation action</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line612">line 612</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="affectedTiles"><span class="type-signature"></span>affectedTiles<span class="type-signature"></span></h4>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line620">line 620</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="axis"><span class="type-signature"></span>axis<span class="type-signature"></span></h4>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line614">line 614</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="direction"><span class="type-signature"></span>direction<span class="type-signature"></span></h4>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line616">line 616</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="next"><span class="type-signature"></span>next<span class="type-signature"></span></h4>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line622">line 622</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="position"><span class="type-signature"></span>position<span class="type-signature"></span></h4>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line618">line 618</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Cube.html">Cube</a></li><li><a href="module-pubsub.html">pubsub</a></li><li><a href="module-util.html">util</a></li><li><a href="module-WebUtils.html">WebUtils</a></li></ul><h3>Classes</h3><ul><li><a href="module-Cube-Cube.html">Cube</a></li><li><a href="module-Cube-CubeEvents.html">CubeEvents</a></li><li><a href="module-Cube-CubeFace.html">CubeFace</a></li><li><a href="module-Cube-CubeTile.html">CubeTile</a></li><li><a href="module-Cube-Position.html">Position</a></li><li><a href="module-Cube-TileAccumulator.html">TileAccumulator</a></li><li><a href="module-WebUtils-CubeView.html">CubeView</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Tue Oct 11 2022 12:00:54 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

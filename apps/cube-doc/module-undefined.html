@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Module: undefined</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Module: undefined</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">Cube Model. The cube is made of 6 faces and each face is made of square grid of tiles.</div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    3
+                
+                </td>
+            
+
+            <td class="description last">size of the rubiks cube</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tilefn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#tilefn">tilefn</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">a callback function needed while createing individual tiles</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    3
+                
+                </td>
+            
+
+            <td class="description last">size of the rubiks cube</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>model</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object.&lt;string, module:Cube~CubeFace></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">internal model of the cube, 6 2D arrays. One for each face.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>action</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">pubsub</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">subject to publish events and subscribe action.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="module-undefined-CubeFace.html">CubeFace</a></dt>
+            <dd></dd>
+        
+            <dt><a href="module-undefined-CubeTile.html">CubeTile</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="xAntiClockWise"><span class="type-signature"></span>xAntiClockWise<span class="signature">(pos, emitEvent)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    It will rotate a slice in anti-clockwise in x-axis. The 0th position is the left most face, the right most face is at one less than the size of the cube position.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">index of the slice</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>emitEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">whether to emit event or not</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line184">line 184</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="xClockWise"><span class="type-signature"></span>xClockWise<span class="signature">(pos, emitEvent)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    It will rotate a slice of the cube in clockwise in x axis. The 0th position is the left most face, the right most face is at one less than the size of the cube position.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">index of the slice</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>emitEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">whether to emit event or not</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line130">line 130</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="yAntiClockWise"><span class="type-signature"></span>yAntiClockWise<span class="signature">(pos, emitEvent)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    It will rotate a slice of the cube in anti-clockwise in y axis. The 0th slice is the top most face and the bottom most slice is at one less than size of the cube position.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">index of the slice</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>emitEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">whether to emit event or not</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line286">line 286</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="yClockWise"><span class="type-signature"></span>yClockWise<span class="signature">(pos, emitEvent)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    It will rotate a slice of the cube in clockwise in y axis. The 0th slice is the top most face and the bottom most slice is at one less than size of the cube position.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">index of the slice</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>emitEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">whether to emit event or not</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line238">line 238</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="zAntiClockWise"><span class="type-signature"></span>zAntiClockWise<span class="signature">(pos, emitEvent)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    It will rotate a slice of the cube in anti-clockwise in z axis. The 0th slice is the front most face and the back most slice is at one less than size of the cube position.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">index of the slice</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>emitEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">whether to emit event or not</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line395">line 395</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="zClockWise"><span class="type-signature"></span>zClockWise<span class="signature">(pos, emitEvent)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    It will rotate a slice of the cube in clockwise in z axis. The 0th slice is the front most face and the back most slice is at one less than size of the cube position.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">index of the slice</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>emitEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">whether to emit event or not</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Cube.js.html">Cube.js</a>, <a href="Cube.js.html#line334">line 334</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Cube.html">Cube</a></li><li><a href="module-pubsub.html">pubsub</a></li><li><a href="module-undefined.html">undefined</a></li></ul><h3>Classes</h3><ul><li><a href="module-Cube-Position.html">Position</a></li><li><a href="module-Cube-TileAccumulator.html">TileAccumulator</a></li><li><a href="module-undefined-CubeFace.html">CubeFace</a></li><li><a href="module-undefined-CubeTile.html">CubeTile</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Sun Oct 02 2022 02:13:44 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
